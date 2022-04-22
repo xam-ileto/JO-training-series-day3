@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xam-ileto/npm-init-tutorial/issues"
   },
-  "homepage": "https://github.com/xam-ileto/npm-init-tutorial#readme"
+  "homepage": "https://github.com/xam-ileto/npm-init-tutorial#readme",
+  "dependencies": {
+    "lower-case": "^2.0.2"
+  }
 }

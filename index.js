@@ -1,4 +1,4 @@
-const lowerCaseModule = require('upper-case');
+const lowerCaseModule = require('lower-case');
 
-var lower = lowerCaseModule.upperCase('string');
+var lower = lowerCaseModule.lowerCase('STRING');
 console.log(lower);

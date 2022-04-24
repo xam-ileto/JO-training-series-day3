@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Index page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- SAMPLE FORM USING POST -->
+    <h1>Your details form:</h1>
+    <!-- form action specifies the URL that will be executed once the form is submitted -->
+    <!-- form action has to match the URL in the index.js POST method -->
+    <!-- make sure form method is specified -->
+    <form action="/submit-details-form" method="post" id="details-form">
+      <p>First name:</p>
+      <!-- input name is the variable name that can be accessed in the req.body -->
+      <input type="text" name="firstName" />
+      <button type="submit" form="details-form">Submit</button>
+    </form>
+    <br />
+    <!-- TO DO: Add sample form -->
+    <script src="" async defer></script>
+  </body>
+</html>

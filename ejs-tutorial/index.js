@@ -11,3 +11,11 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/profile1', (req, res) => {
+  res.render('profile1');
+});
+
+app.get('/profile2', (req, res) => {
+  res.render('profile2');
+});

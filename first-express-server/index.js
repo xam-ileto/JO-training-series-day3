@@ -14,7 +14,7 @@ app.listen(port);
 console.log(`App listening at port ${port}`);
 
 // STEP 4: add routes
-// these are URLs that can be typed in the browser
+// these are URLs that will be connected to
 app.get('/hello', function (req, res) {
   res.send('Hello World!');
 });

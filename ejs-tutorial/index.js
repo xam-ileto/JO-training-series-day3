@@ -19,12 +19,18 @@ app.get('/profile1', (req, res) => {
   var data = {
     name: 'Xam',
     age: 17,
-    hobbies: ['Playing ', 'Coding'],
+    hobbies: ['Playing the Sims', 'Coding'],
   };
 
   res.render('profile-page', data);
 });
 
 app.get('/profile2', (req, res) => {
-  res.render('profile-page');
+  var data = {
+    name: 'Jared',
+    age: 19,
+    hobbies: ['Playing Apex', 'Playing Genshin', 'Playing basketball'],
+  };
+
+  res.render('profile-page', data);
 });

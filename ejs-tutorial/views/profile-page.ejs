@@ -12,22 +12,17 @@
     <h1><%=name %></h1>
 
     <h3>Age</h3>
-
-    <% if (age >= 18) {%>
-    <p>Regular account</p>
-    <%} else { %>
-    <p>Junior account</p>
-    <%}%>
+    <p><%= age %></p>
+    <% if (age < 18){%>
+    <p>Junior Account</p>
+    <% } else { %>
+    <p>Regular Account</p>
+    <% } %>
 
     <h3>Hobbies</h3>
-    <p>Playing Apex</p>
-    <p>Playing Genshin</p>
-    <p>Playing basketball</p>
-
-    <hr />
-    <p>Footer</p>
-    <p>© 2022</p>
-
+    <% hobbies.forEach( item => {%>
+    <p><%= item %></p>
+    <% }) %> <%- include('./partials/footer.ejs') %>
     <script src="" async defer></script>
   </body>
 </html>

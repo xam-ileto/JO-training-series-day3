@@ -29,6 +29,7 @@ app.get('/', function (req, res) {
 app.post('/submit-details-form', (req, res) => {
   console.log('You have submitted your form!');
   console.log(req.body);
+  console.log(req.body.firstName);
 });
 
 // TO DO: add sample POST method

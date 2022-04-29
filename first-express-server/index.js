@@ -19,4 +19,8 @@ app.get('/hello', function (req, res) {
   res.send('Hello World!');
 });
 
+app.get('/profile', (req, res) => {
+  res.send('This is the profile page');
+});
+
 // TO DO: Add remaining routes here

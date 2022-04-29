@@ -16,9 +16,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile1', (req, res) => {
-  res.render('profile1');
+  var data = {
+    name: 'Xam',
+    age: 17,
+    hobbies: ['Playing ', 'Coding'],
+  };
+
+  res.render('profile-page', data);
 });
 
 app.get('/profile2', (req, res) => {
-  res.render('profile2');
+  res.render('profile-page');
 });
